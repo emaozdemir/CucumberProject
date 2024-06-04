@@ -46,10 +46,6 @@ public class ContactListStepDefinitions {
         assertEquals("https://thinking-tester-contact-list.herokuapp.com/contactList", url);
     }
 
-    @Then("user closes the browser")
-    public void user_closes_the_browser() {
-        Driver.closeDriver();
-    }
 
     @When("user enters wrong email")
     public void user_enters_wrong_email() {
@@ -76,5 +72,6 @@ public class ContactListStepDefinitions {
     public void userEntersPassword(String password) {
         clHomePage.password.sendKeys(password);
     }
+
 
 }

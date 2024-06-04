@@ -37,6 +37,8 @@ Feature: Login Test
   Scenario: Negative login Test Empty Password
 
     When user enters email
+
     And user clicks on submit
     Then user validates error message
     And user closes the browser
+
