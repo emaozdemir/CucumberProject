@@ -9,11 +9,13 @@ Feature: Form Test Feature
     And user selects form country "<country>"
     And user enters form notes "<notes>"
     And user clicks on form gonder
+    And user closes the browser
     Examples:
       | firstname | lastname | age | country | notes          |
-      | john      | doedoe   | 25  | Mali    | umarim calisir |
-      | john      | doedoe   | 25  | Haiti   | umarim calisir |
-      | john      | doedoe   | 25  | Bolivia | umarim calisir |
-      | john      | doedoe   | 25  | Cuba    | umarim calisir |
+      | john      | doedoedoee   | 25  | Mali    | umarim calisir |
+      | john      | doedoedoee   | 25  | Mali    | umarim calisir |
+      | john      | doedoedoee   | 25  | Mali    | umarim calisir |
+      | john      | doedoedoee   | 25  | Mali    | umarim calisir |
+
 
 

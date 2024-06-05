@@ -5,7 +5,7 @@ Feature: Login Test
     Given user goes to homepage
 
   @FailedScenario
-  Scenario: Positive Login Failed Test
+  Scenario: Login Failed Test
 
     When user enters email
     And user enters password
