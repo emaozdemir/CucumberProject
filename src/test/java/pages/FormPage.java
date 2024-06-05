@@ -5,13 +5,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class EvilTesterHomePage {
+public class FormPage {
 
-    public EvilTesterHomePage(){
+    public FormPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(name= "username")
+    @FindBy(name = "username")
     public WebElement username;
 
     @FindBy(name = "password")
@@ -21,9 +21,7 @@ public class EvilTesterHomePage {
     public WebElement comments;
 
     @FindBy(xpath = "//input[@value='submit']")
-    public WebElement submitbutton;
+    public WebElement submit;
 
-//    @FindBy(id = "")
-//    public WebElement ;
 
 }

@@ -1,10 +1,6 @@
-@Evil
+@Form
 Feature: Form Test Feature
 
-  Background: User goes to homepage
-
-
-  @PositiveTests04
   Scenario Outline: Form Test
     Given user goes to url "https://testpages.eviltester.com/styled/basic-html-form-test.html"
     When user enters form username "<username>"
