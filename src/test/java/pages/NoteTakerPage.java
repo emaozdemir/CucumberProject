@@ -10,13 +10,13 @@ public class NoteTakerPage {
     public NoteTakerPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy()
+    @FindBy(id = "note-title-input")
     public WebElement title;
 
-    @FindBy()
+    @FindBy(id = "note-details-input")
     public WebElement notes;
 
-    @FindBy()
+    @FindBy(id = "add-note")
     public WebElement add;
 
 }
