@@ -30,4 +30,7 @@ public class HWValidation31 {
     @FindBy(xpath= "//form[@action='/validate/input-validation']")
     public WebElement hata;
 
+    @FindBy(xpath= "(//label[@class='errormessage'])[3]")
+    public WebElement hataAge;
+
 }

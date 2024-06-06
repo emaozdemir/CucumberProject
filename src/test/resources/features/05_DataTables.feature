@@ -1,6 +1,7 @@
 @DataTable
 Feature: Data Table Test
 
+#    1 sutun olunca list kullanılır
   @ToDoList
   Scenario: Todo list
     Given user goes to url "https://webdriveruniversity.com/To-Do-List/index.html"
@@ -15,6 +16,7 @@ Feature: Data Table Test
       | Go to school             |
     Then user closes the browser
 
+#birden fazla sutunlarda map kullanırız
   @FormMap
   Scenario: Form Page Map
     Given user goes to url "https://testpages.eviltester.com/styled/basic-html-form-test.html"
@@ -37,3 +39,5 @@ Feature: Data Table Test
       | fatma_yan | 789  | Günaydın!!!  |
 
     Then user closes the browser
+
+

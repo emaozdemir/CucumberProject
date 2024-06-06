@@ -15,6 +15,7 @@ public class ToDoListStepDefinitions {
         ToDoListPage toDoListPage = new ToDoListPage();
 
         List<String> todos = dataTable.asList();
+       // System.out.println("todos = " + todos);//[Prepare breakfast,....]
 
         for (String w : todos) {
             toDoListPage.input.sendKeys(w + Keys.ENTER);
