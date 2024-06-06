@@ -14,7 +14,7 @@ public class ParallelTestStepDefinitions {
 
     @When("user prints the title")
     public void user_prints_the_title() {
-        System.out.println("ParallelDriver.getDriver().getTitle() = " + ParallelDriver.getDriver().getTitle());
+        System.out.println(ParallelDriver.getDriver().getTitle());
     }
 
     @Then("close parallel driver")
