@@ -1,7 +1,7 @@
 @DataTable
 Feature: Data Table Test
 
-#    1 sutun olunca list kullanılır
+#    1 sutun olunca list kullanılır(asList())
   @ToDoList
   Scenario: Todo list
     Given user goes to url "https://webdriveruniversity.com/To-Do-List/index.html"
@@ -16,7 +16,7 @@ Feature: Data Table Test
       | Go to school             |
     Then user closes the browser
 
-#birden fazla sutunlarda map kullanırız
+#ikili sutunlarda map kullanırız(asMap())
   @FormMap
   Scenario: Form Page Map
     Given user goes to url "https://testpages.eviltester.com/styled/basic-html-form-test.html"
@@ -28,6 +28,7 @@ Feature: Data Table Test
 
     Then user closes the browser
 
+    #üçlü sutunlarda list of list kullanırız(asLists())
   @FormListOfList
   Scenario: Form Page Map
     Given user goes to url "https://testpages.eviltester.com/styled/basic-html-form-test.html"

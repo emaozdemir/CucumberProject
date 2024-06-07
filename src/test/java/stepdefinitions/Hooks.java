@@ -8,6 +8,9 @@ import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
 public class Hooks {//Bu class tekrarlı kullanılacak before ve after methoları içindir.
+    //hooksu aslında baska bir yere açıp ve
+    // glue = {"stepdefinitions","hooks"} diye kullanabiliriz ama unutulmasın diye direk bu package actık
+
 
     @Before//Her scenario öncesi çalışır. --> import io.cucumber.java.Before;
     public void setUp(Scenario scenario){
@@ -33,7 +36,7 @@ public class Hooks {//Bu class tekrarlı kullanılacak before ve after metholar�
     }
 
 
-    @Before("@Smoke")//Her @Smoke scenario öncesi çalışır. --> import io.cucumber.java.Before;
+    @Before("@Smoke")//Her @Smoke tagli scenario öncesi çalışır. --> import io.cucumber.java.Before;
     public void smokeSetUp(Scenario scenario){
         System.out.println("********Smoke Test Scenariosu**********");
     }

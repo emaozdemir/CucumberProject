@@ -2,6 +2,7 @@ package stepdefinitions;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.*;
+import io.cucumber.java.it.Ma;
 import pages.FormPage;
 import utilities.Driver;
 
@@ -81,5 +82,5 @@ public class FormPageStepDefinitions {
 
     }
 
-//collection olarak döner data table
+
 }
