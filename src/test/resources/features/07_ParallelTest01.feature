@@ -1,4 +1,7 @@
 @Parallel
+
+  #cucumberde direk paralel calıstırma yok bunu mavenle yapabiliriz.çünkü cucumber singelten driver.
+  #senaryo seviyesinde paralel calsıtırcak ,eklenti yaptık poma,ve utiliste pararlel driver
 Feature: Parallel Test 01
 
   Scenario: Google Test

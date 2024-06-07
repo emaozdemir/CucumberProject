@@ -36,7 +36,7 @@ public class Hooks {//Bu class tekrarlı kullanılacak before ve after metholar�
     }
 
 
-    @Before("@Smoke")//Her @Smoke tagli scenario öncesi çalışır. --> import io.cucumber.java.Before;
+    @Before("@Smoke")//Her @Smoke  scenario öncesi çalışır. --> import io.cucumber.java.Before;
     public void smokeSetUp(Scenario scenario){
         System.out.println("********Smoke Test Scenariosu**********");
     }

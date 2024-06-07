@@ -2,7 +2,7 @@
 Feature: Form Test Feature
 
   Background: User goes to homepage
-    Given user goes to URL "https://testpages.eviltester.com/styled/validation/input-validation.html"
+    Given user goes to url "https://testpages.eviltester.com/styled/validation/input-validation.html"
 
   @PositiveTests
   Scenario Outline: Form Validation Test

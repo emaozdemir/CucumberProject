@@ -1,6 +1,8 @@
 @Form
 Feature: Form Test Feature
 
+
+#loop gibi calisir Scenario Outline
   Scenario Outline: Form Test
     Given user goes to url "https://testpages.eviltester.com/styled/basic-html-form-test.html"
     When user enters form username "<username>"
