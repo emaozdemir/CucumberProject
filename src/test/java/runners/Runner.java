@@ -17,8 +17,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@HW32",
-        dryRun = false//'dryRun = true' testi çalıştırmaz, eksik step deinitionları bulur.
+        tags = "@XYZBank",
+        dryRun =false//'dryRun = true' testi çalıştırmaz, eksik step deinitionları bulur.
 )
 
 public class Runner {
