@@ -10,7 +10,10 @@ public class ParallelTestStepDefinitions {
     @Given("user goes to URL {string}")
     public void userGoesToURL(String url) {
         ParallelDriver.getDriver().get(url);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ec4f47e131e24b3bddb2963a62a913fceafd304
     }
 
     @When("user prints the title")
