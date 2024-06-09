@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 public class EditorStepDefinitions {
+
     EditorPage editorPage = new EditorPage();
 
     @When("user enters credentials from excel")
@@ -16,11 +17,12 @@ public class EditorStepDefinitions {
 
         ExcelUtils excelUtils = new ExcelUtils("employees.xlsx", "info");
         List<Map<String, String>> dataList = excelUtils.getDataList();
+       // System.out.println("dataList = " + dataList);
 
 
         for (Map<String, String> w : dataList) {
 
-            System.out.println(w);
+           // System.out.println(w);
             String first_name = w.get("first_name");
             String last_name = w.get("last_name");
             String position = w.get("position");
@@ -39,6 +41,8 @@ public class EditorStepDefinitions {
             editorPage.start_date.sendKeys(start_date);
             editorPage.salary.sendKeys(salary);
             editorPage.createButton.click();
+
+
             Thread.sleep(2000);
             editorPage.search.clear();
             editorPage.search.sendKeys(first_name);

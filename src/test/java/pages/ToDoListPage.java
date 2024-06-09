@@ -8,7 +8,6 @@ import utilities.Driver;
 public class ToDoListPage {
     public ToDoListPage(){
         PageFactory.initElements(Driver.getDriver(), this);
-        System.out.println("");
     }
 
     @FindBy(tagName= "input")
