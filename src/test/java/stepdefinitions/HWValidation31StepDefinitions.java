@@ -2,23 +2,23 @@ package stepdefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.support.ui.Select;
-import pages.HWValidation31;
+import pages.HWValidationPage;
 
 public class HWValidation31StepDefinitions {
 
-    HWValidation31 hwValidation = new HWValidation31();
+    HWValidationPage hwValidation = new HWValidationPage();
+
     @When("user enters form firstname {string}")
     public void user_enters_form_firstname(String firstname) {
-        hwValidation.firstname.sendKeys(firstname);
+      hwValidation.firstname.sendKeys(firstname);
     }
     @When("user enters form lastname {string}")
     public void user_enters_form_lastname(String lastname) {
-        hwValidation.lastname.sendKeys(lastname);
+       hwValidation.lastname.sendKeys(lastname);
     }
-    @When("user not enters form age {string}")
-    public void user_not_enters_form_age(String age) {
-       hwValidation.age.sendKeys(age);
+    @When("user enters form age {string}")
+    public void user_enters_form_age(String age) {
+        hwValidation.age.sendKeys(age);
     }
     @When("user selects form country {string}")
     public void user_selects_form_country(String country) {
@@ -30,15 +30,16 @@ public class HWValidation31StepDefinitions {
     }
     @When("user clicks on form gonder")
     public void user_clicks_on_form_gonder() {
-        hwValidation.gonder.click();
+       hwValidation.gonder.click();
     }
-    @When("user validates error message about age")
-    public void user_validates_error_message_about_age() {
-        hwValidation.hataAge.isDisplayed();
+    @When("user validates inputValidate age error message")
+    public void user_validates_input_validate_age_error_message() {
+      hwValidation.hataAge.isDisplayed();
     }
 
-    @And("user enters form age {string}")
-    public void userEntersFormAge(String age) {
-        hwValidation.age.sendKeys(age);
+
+    @And("user validates inputValidate lastname error message")
+    public void userValidatesInputValidateLastnameErrorMessage() {
+        hwValidation.hata.isDisplayed();
     }
 }

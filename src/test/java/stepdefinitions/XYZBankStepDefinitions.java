@@ -49,6 +49,8 @@ public class XYZBankStepDefinitions {
 
     }
 
+
+
     @When("click on Open Account")
     public void click_on_open_account() {
         xyzBankManagerPage.openAccountButton.click();
@@ -61,7 +63,7 @@ public class XYZBankStepDefinitions {
         for (int i = 6; i < 11; i++) {//5 kez çalışır
 
             new Select(xyzBankManagerPage.customerSelect).selectByIndex(i);
-            new Select(xyzBankManagerPage.currency).selectByIndex(1);
+            new Select(xyzBankManagerPage.currency).selectByIndex(1);//hep dolar sec dediği için soru direk indexini aldık.
             xyzBankManagerPage.process.click();
             try {
                 Driver.getDriver().switchTo().alert().accept();

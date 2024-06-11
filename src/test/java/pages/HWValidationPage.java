@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class HWValidation31 {
-    public HWValidation31(){//PUBLİC BİR CONSTRACTIR BU.BU SAYFADAKİ BU CLASIN OBJESİYLE AŞAĞIDAKİ WEB ELEMENTLER BASLATILCAK
+public class HWValidationPage {
+    public HWValidationPage(){//PUBLİC BİR CONSTRACTIR BU.BU SAYFADAKİ BU CLASIN OBJESİYLE AŞAĞIDAKİ WEB ELEMENTLER BASLATILCAK
         PageFactory.initElements(Driver.getDriver(), this);
     }
     @FindBy(name= "firstname")
